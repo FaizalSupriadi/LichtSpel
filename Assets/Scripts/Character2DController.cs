@@ -5,12 +5,11 @@ using UnityEngine;
 public class Character2DController : MonoBehaviour
 {
 	public float MovementSpeed = 1;
-	private Rigidbody2D rigidbody;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -20,4 +19,6 @@ public class Character2DController : MonoBehaviour
 		var moveY = Input.GetAxisRaw("Vertical");
 		transform.position += new Vector3(moveX, moveY, 0) * Time.deltaTime * MovementSpeed;
     }
+
+
 }
