@@ -5,14 +5,8 @@ using UnityEngine;
 public class Character2DController : MonoBehaviour
 {
 	public float MovementSpeed = 1;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+	
+    // Get keyboard input and use those to move the player
     void Update()
     {
         var moveX = Input.GetAxisRaw("Horizontal");
