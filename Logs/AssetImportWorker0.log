@@ -635,3 +635,4 @@ Received Import Request.
 Start importing Assets/Sunnyland/artwork/Sprites/Fx/item-feedback/item-feedback-3.png using Guid(857b27bf305c140dab35e3de694fcfbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453fa6ea8f6b0c71b4802b5785d2eea5') in 0.022396 seconds 
   Import took 0.033839 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
