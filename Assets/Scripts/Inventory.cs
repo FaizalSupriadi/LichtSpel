@@ -5,7 +5,10 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public GameObject Candle;
+
     public GameObject Flashlight;
+
+
     [HideInInspector]
     public static bool unlockFlash = false;
 

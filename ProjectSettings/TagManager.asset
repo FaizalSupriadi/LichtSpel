@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PickUp
+  - Battery
+  - Flashlight
+  - Bridge
   layers:
   - Default
   - TransparentFX

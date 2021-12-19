@@ -5,19 +5,35 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerAttributes : MonoBehaviour
 {
-	public static GameObject FlashLight;
+	public  GameObject FlashlightIntensityOne;
+    public  GameObject FlashlightIntensityTwo;
+    public  GameObject FlashlightIntensityThree;
 
-	private static int FlashlightIntensity = 0;
 
-    public static int GetFlashlightIntensity(){
+	private int FlashlightIntensity = 1;
+
+    public int GetFlashlightIntensity(){
     	return FlashlightIntensity;
     }
 
-    public static void UpgradeFlashlightIntensity(){
+    public void UpgradeFlashlightIntensity(){
     	FlashlightIntensity += 1;
     	Debug.Log(FlashlightIntensity);
-    	// FlashLight.GetComponent<Light2D>().OuterRadius += 1;
-
+    	if(FlashlightIntensity == 1){
+    		FlashlightIntensityOne.SetActive(true);
+    		FlashlightIntensityTwo.SetActive(false);
+    		FlashlightIntensityThree.SetActive(false);
+    	}
+    	else if(FlashlightIntensity == 2){
+    		FlashlightIntensityOne.SetActive(false);
+    		FlashlightIntensityTwo.SetActive(true);
+    		FlashlightIntensityThree.SetActive(false);
+    	}
+    	else if(FlashlightIntensity == 3){
+    		FlashlightIntensityOne.SetActive(false);
+    		FlashlightIntensityTwo.SetActive(false);
+    		FlashlightIntensityThree.SetActive(true);
+    	}
     	if(FlashlightIntensity > 3){
     		FlashlightIntensity = 3;
     	}
