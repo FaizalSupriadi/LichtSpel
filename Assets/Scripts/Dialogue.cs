@@ -14,9 +14,10 @@ public class Dialogue : MonoBehaviour
 
     
     // Start is called before the first frame update
-    public void StartDialogue(){
+    public IEnumerator StartDialogue(){
         dialogueText.text = dialogue;
         dialogueBox.SetActive(true);
+        yield return new WaitForSeconds(waitTime);
     }
 
     public IEnumerator StopDialogue(){

@@ -30,7 +30,7 @@ public class CollideTrigger : MonoBehaviour
     		if(Inventory.unlockFlash){
     			attr.UpgradeFlashlightIntensity();
     			if(attr.GetFlashlightIntensity() == 2){
-    				dialogue.setDialogue("Nog maar 1 batterij!");
+    				dialogue.setDialogue("Nog maar 1 batterij te gaan!");
     				startDialogue();
     			}else if(attr.GetFlashlightIntensity() > 2){
     				dialogue.setDialogue("Ik heb nu 2 batterijen.... Mijn lichtbron is nu sterk genoeg om goed te kunnen zien over welke brug ik moet lopen om aan de overkant te komen.");
@@ -58,7 +58,7 @@ public class CollideTrigger : MonoBehaviour
 
     private void startDialogue(){
     	if(dialogue != null){
-			dialogue.StartDialogue();
+			StartCoroutine(dialogue.StartDialogue());
 		}
     }
 
