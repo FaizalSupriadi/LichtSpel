@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\CollideTrigger.cs" />
      <Compile Include="Assets\Scripts\FlashlightScript.cs" />
      <Compile Include="Assets\Scripts\PlayerAttributes.cs" />
+     <Compile Include="Assets\Scripts\LockZ.cs" />
      <Compile Include="Assets\Scripts\Character2DController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

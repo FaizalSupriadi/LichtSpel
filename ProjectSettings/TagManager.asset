@@ -7,6 +7,8 @@ TagManager:
   - Battery
   - Flashlight
   - Bridge
+  - Sign
+  - End
   layers:
   - Default
   - TransparentFX
