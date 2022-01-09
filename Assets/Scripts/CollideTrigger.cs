@@ -12,22 +12,25 @@ public class CollideTrigger : MonoBehaviour
 
 	private Dialogue dialogue;
 	private PlayerAttributes attr;
+    private Inventory inventory;
 	void Start(){
 		attr = gameObject.GetComponent<PlayerAttributes>();
-
+        inventory = gameObject.GetComponent<Inventory>();
 	}
 
 	// When colliding with another object, if the name is correct, it does something specific
     private void OnTriggerEnter2D(Collider2D collider){	
     	Debug.Log(collider.gameObject.tag);
 		dialogue = collider.gameObject.GetComponent<Dialogue>();
+        
 
     	if(collider.CompareTag("Flashlight")){
 			startDialogue();
     		collider.gameObject.SetActive(false);
-    		Inventory.unlockFlash = true;
+    		inventory.unlockFlash = true;
+            inventory.FlashInvOn();
     	}else if(collider.CompareTag("Battery")){
-    		if(Inventory.unlockFlash){
+    		if(inventory.unlockFlash){
     			attr.UpgradeFlashlightIntensity();
     			if(attr.GetFlashlightIntensity() == 2){
     				dialogue.setDialogue("Nog maar 1 batterij te gaan!");
@@ -41,7 +44,7 @@ public class CollideTrigger : MonoBehaviour
     			startDialogue();
     		}
     	}else if(collider.CompareTag("Bridge")){
-    		if(attr.GetFlashlightIntensity() <= 2 || !Inventory.flashlightEquip){
+    		if(attr.GetFlashlightIntensity() <= 2 || !inventory.flashlightEquip){
 				startDialogue();
     		}else{
     			BridgeHitbox.SetActive(false);
