@@ -47,12 +47,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
-     <Compile Include="Assets\Scripts\CollideTrigger.cs" />
-     <Compile Include="Assets\Scripts\Dialogue.cs" />
-     <Compile Include="Assets\Scripts\PlayerAttributes.cs" />
-     <Compile Include="Assets\Scripts\Character2DController.cs" />
+     <Compile Include="Assets\Scripts\Level\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Level\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Level\CollideTrigger.cs" />
+     <Compile Include="Assets\Scripts\Level\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\Quiz\QuizLogic.cs" />
+     <Compile Include="Assets\Scripts\Level\PlayerAttributes.cs" />
+     <Compile Include="Assets\Scripts\Level\Character2DController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
