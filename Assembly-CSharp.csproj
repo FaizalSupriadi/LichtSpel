@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Level\Dialogue.cs" />
      <Compile Include="Assets\Scripts\Quiz\QuizLogic.cs" />
      <Compile Include="Assets\Scripts\Level\PlayerAttributes.cs" />
+     <Compile Include="Assets\Scripts\Level\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\Level\Character2DController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

@@ -32,6 +32,7 @@ public class QuizLogic : MonoBehaviour
 
     void Start()
     {
+
         questionAmount = questions.Count;
 
 		colNormal = ButtonA.colors;
@@ -48,6 +49,7 @@ public class QuizLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    	Cursor.visible = true;
 		QuestionText.text = questions[questionIndex];
 		textA.text = answerA[questionIndex];
 		textB.text = answerB[questionIndex];

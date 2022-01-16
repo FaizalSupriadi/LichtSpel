@@ -13,6 +13,10 @@ public class SceneSwitcher : MonoBehaviour
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 	}
 
+	public static void goTo(int scene){
+		SceneManager.LoadScene(scene);
+	}
+
 	public static void quit(){
 		Debug.Log("QUIT");
 		Application.Quit();

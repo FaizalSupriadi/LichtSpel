@@ -9,8 +9,11 @@ public class PlayerAttributes : MonoBehaviour
     public  GameObject FlashlightIntensityTwo;
     public  GameObject FlashlightIntensityThree;
 
+	public int FlashlightIntensity;
 
-	private int FlashlightIntensity = 1;
+    void Start(){
+        UpgradeFlashlightIntensity();
+    }
 
     public int GetFlashlightIntensity(){
     	return FlashlightIntensity;

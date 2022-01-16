@@ -9,6 +9,10 @@ TagManager:
   - Bridge
   - Sign
   - End
+  - Flashlight2
+  - Sensor
+  - End2
+  - Key
   layers:
   - Default
   - TransparentFX
