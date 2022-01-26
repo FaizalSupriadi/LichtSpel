@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz02.unity
     guid: a911e0eb03ee36547a1e0b0a62c0ab9c
+  - enabled: 0
+    path: Assets/Scenes/PauseMenu.unity
+    guid: 13fcc657eb3b119488981032ed66a6d6
   m_configObjects: {}

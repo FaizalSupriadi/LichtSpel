@@ -12,6 +12,7 @@ public class Character2DController : MonoBehaviour
         var moveX = Input.GetAxisRaw("Horizontal");
 		var moveY = Input.GetAxisRaw("Vertical");
 		transform.position += new Vector3(moveX, moveY, 0) * Time.deltaTime * MovementSpeed;
+
     }
 
 
