@@ -13,6 +13,8 @@ TagManager:
   - Sensor
   - End2
   - Key
+  - Concave
+  - Convex
   layers:
   - Default
   - TransparentFX

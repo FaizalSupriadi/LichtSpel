@@ -20,7 +20,7 @@ public class ObjectiveLogic : MonoBehaviour
 
     public void goToObjective(int task){
     	if (task < 0){}
-    	else if(task < objectives.Count){
+    	else if(task < objectives.Count && currentObjective < task){
     		currentObjective = task;
     	}
     }

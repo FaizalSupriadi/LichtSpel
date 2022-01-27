@@ -1078,9 +1078,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Besturing spel:\r\n\nLopen \u2013 WASD of pijltjes\r\nE \u2013 Oppakken
-    en neerleggen van bepaalde objecten\r\nToets 1 \u2013 Kaars gebruiken\r\nToets
-    2 \u2013 Standaard zaklamp gebruiken\r\nToets 3 \u2013 Speciale zaklamp gebruiken\r\nESC
-    \u2013 Pauze"
+    en neerleggen van bepaalde objecten\r\nQ \u2013 Het wisselen van lensen\nToets
+    1 \u2013 Kaars gebruiken\r\nToets 2 \u2013 Standaard zaklamp gebruiken\r\nToets
+    3 \u2013 Speciale zaklamp gebruiken\r\nESC \u2013 Pauze"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
