@@ -12,12 +12,12 @@ public class ObjectiveLogic : MonoBehaviour
 
 
 	private int currentObjective = 0;
-
+	// Update the objective text
     void Update()
     {
         ObjectiveText.text = objectives[currentObjective];
     }
-
+ 
     public void goToObjective(int task){
     	if (task < 0){}
     	else if(task < objectives.Count && currentObjective < task){

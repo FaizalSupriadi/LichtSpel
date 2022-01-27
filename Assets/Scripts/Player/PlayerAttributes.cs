@@ -19,6 +19,7 @@ public class PlayerAttributes : MonoBehaviour
         UpgradeFlashlightIntensity();
     }
 
+    // Choose whether to use the default, concave or convex light.
     public void UseFlashlight2Mode(int mode){
         if(mode == 0){
             Flashlight2Default.SetActive(true);
@@ -39,6 +40,7 @@ public class PlayerAttributes : MonoBehaviour
     	return FlashlightIntensity;
     }
 
+    // Will increase the intensity of the flashlight
     public void UpgradeFlashlightIntensity(){
     	FlashlightIntensity += 1;
     	Debug.Log(FlashlightIntensity);

@@ -23,7 +23,7 @@ public class CollideTrigger : MonoBehaviour
         objLogic = objCanvas.GetComponent<ObjectiveLogic>();
     }
 
-    // // When colliding with another object, if the tag is correct, it does something specific
+    // // When colliding and staying on another object, if the tag is correct, it does something specific
     private void OnTriggerStay2D(Collider2D collider){ 
         Debug.Log(collider.gameObject.tag);
         dialogue = collider.gameObject.GetComponent<Dialogue>();
@@ -67,7 +67,7 @@ public class CollideTrigger : MonoBehaviour
             dialogue = null;
         }
     }
-
+    // Will pickup the first flashlight and unlock it
     void flashlight(Collider2D collider){
         startDialogue();
         collider.gameObject.SetActive(false);
@@ -75,7 +75,7 @@ public class CollideTrigger : MonoBehaviour
         inventory.FlashInvOn();
         objLogic.nextObjective();
     }
-
+    // Will pickup the second flashlight and unlock it
     void flashlight2(Collider2D collider){
         objLogic.goToObjective(task.getObjective());
         startDialogue();
@@ -83,7 +83,7 @@ public class CollideTrigger : MonoBehaviour
         inventory.unlockFlash2 = true;
         inventory.Flash2InvOn();
     }
-
+    // The battery will upgrade the first flashlight's light
     void battery(Collider2D collider){
         if(inventory.unlockFlash){
             objLogic.nextObjective();
@@ -101,7 +101,7 @@ public class CollideTrigger : MonoBehaviour
             startDialogue();
         }
     }
-
+    // This checks whether the player has a strong enough light to go over it.
     void bridge(Collider2D collider){
         if(attr.GetFlashlightIntensity() <= 2 || !inventory.flashlightEquip){
             startDialogue();
@@ -109,7 +109,7 @@ public class CollideTrigger : MonoBehaviour
             BridgeHitbox.SetActive(false);
         }
     }
-
+    // The sensor will check for multiple possibilties with the lenses and its flashlight
     void sensor(Collider2D collider){
         sensor_ = collider.gameObject.GetComponent<SensorInteract>();
         if(inventory.flashlight2Equip && inventory.convexEquip && Input.GetKey("e") && inventory.unlockFlash2Concave){
@@ -134,20 +134,20 @@ public class CollideTrigger : MonoBehaviour
         }
         startDialogue();
     }
-
+    // This will unlock the end gate of level 2
     void key(Collider2D collider){
         objLogic.goToObjective(task.getObjective());
         startDialogue();
         inventory.hasKey = true;
         collider.gameObject.SetActive(false);
     }
-
+    // The ending of level 1, will switch to the next scene
     void end(Collider2D collider){
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         SceneSwitcher.next();
     }
-
+    // The ending of level 2, will switch to the next scene
     void end2(Collider2D collider){
         if(inventory.hasKey){            
             Cursor.lockState = CursorLockMode.None;
@@ -157,7 +157,7 @@ public class CollideTrigger : MonoBehaviour
             startDialogue();
         }
     }
-
+    // Will unlock the concave lens
     void concave(Collider2D collider){
         if(!inventory.unlockFlash2){
             startDialogue();
@@ -171,7 +171,7 @@ public class CollideTrigger : MonoBehaviour
             collider.gameObject.SetActive(false);
         }
     }
-
+    // Will unlock the concave lens
     void convex(Collider2D collider){
         if(!inventory.unlockFlash2){
             startDialogue();

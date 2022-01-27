@@ -21,7 +21,6 @@ public class Character2DController : MonoBehaviour
 			(transform.position.x + moveX * Time.deltaTime * MovementSpeed), 
 			(transform.position.y + moveY * Time.deltaTime * MovementSpeed)
 			));
-// transform.position += new Vector3(moveX, moveY, 0) * Time.deltaTime * MovementSpeed
     }
 
 

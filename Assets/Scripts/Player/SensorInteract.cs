@@ -12,7 +12,7 @@ public class SensorInteract : MonoBehaviour
     void Start(){
         inventory = player.GetComponent<Inventory>();
     }
-
+    // This will put the flashlight on the ground and open the lower gate of level 2
     public void activate(){
         inventory.Flash2InvOff();
         Flashlight2.SetActive(true);

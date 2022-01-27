@@ -82,7 +82,7 @@ public class Inventory : MonoBehaviour
         attr.UseFlashlight2Mode(2);
     }
 
-    // Use desired objects
+    // This will check every update if a key has been pressed, if pressed activate the desired item
     void Update()
     {
         if(Input.GetKeyDown("1")){
@@ -125,6 +125,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
+
+    // These active functions will activate and highlight the desired item
+
     void CandleInvActive(){
         Candle.SetActive(!Candle.activeSelf);
         candleEquip = Candle.activeSelf;
@@ -155,6 +158,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    // These off functions will turn off the item
     void FlashOff(){
         Flashlight.SetActive(false);
         flashlightEquip = false;
