@@ -866,20 +866,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - 1. Is niet-rechtlijnige voortplanting van licht mogelijk?
+  - 1. Niet-rechtlijnige voortplanting van licht is mogelijk.
   - 2. Bij welk type lens spreiden evenwijdige lichtstralen uit elkaar nadat ze door
     deze lens heen schijnen.
   - "3. Nadat evenwijdige lichtstralen door een bolle lens schijnen komen ze samen
     op \xE9\xE9n punt. Hoe heet dit punt?"
   answerA:
-  - Ja, hierdoor kan bijvoorbeeld een hele kamer oplichten wanneer er licht door
-    een klein raampje schijnt.
+  - Waar
   - Bij een bolle lens
   - Het brandpunt
   answerB:
-  - Nee, licht kan alleen weerkaatst worden vanuit een voorwerp en vervolgens een
-    andere richting op schijnen. Uit zichzelf kan een lichtstraal geen hoek of iets
-    dergelijks maken.
+  - 'Niet waar '
   - Bij een holle lens
   - Het optisch middelpunt
   validityA: 000001

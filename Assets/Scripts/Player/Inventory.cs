@@ -48,15 +48,16 @@ public class Inventory : MonoBehaviour
     void Start(){
         attr = gameObject.GetComponent<PlayerAttributes>();
     }
-
+    // Show the frame/border of the flashlight
     public void FlashInvOn(){
         FlashlightInventory.SetActive(true);
     }
-
+    // Show the frame/border of the flashlight2
     public void Flash2InvOn(){
         Flashlight2Inventory.SetActive(true);
     }
 
+    // This will equip the player with the concave lens and disable the other.
     public void ConcaveInvActive(){
         concaveEquip = true;
         if(unlockFlash2Convex){
@@ -68,7 +69,7 @@ public class Inventory : MonoBehaviour
         Flashlight2Concave.SetActive(!Flashlight2Concave.activeSelf);
         attr.UseFlashlight2Mode(1);
     }
-
+    // This will equip the player with the convex lens and disable the other.
     public void ConvexInvActive(){
         convexEquip = true;    
         if(unlockFlash2Concave){
@@ -153,8 +154,6 @@ public class Inventory : MonoBehaviour
             Flashlight2Border.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
-
-
 
     void FlashOff(){
         Flashlight.SetActive(false);

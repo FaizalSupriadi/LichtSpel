@@ -524,23 +524,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - 1. Is hoe ver je kan kijken in het donker afhankelijk van de sterkte van een
-    lichtbron?
-  - '2. Hoe kun je een voorwerp in het donker zien wanneer je er met een lichtbron
-    op schijnt? '
-  - 3. Is licht noodzakelijk om te kunnen zien?
+  - 1. Hoever je kan kijken in het donker is afhankelijk van de sterkte van een lichtbron.
+  - 2. Een voorwerp kun je zien doordat je er met je ogen naar kijkt en de kleuren
+    hierdoor vervolgens oplichten.
+  - 3. Een voorwerp kun je zien doordat de lichtstralen die hierop vallen terugkaatsen
+    in je ogen.
   answerA:
-  - Ja, licht is eindig. Hoe feller of sterker de lichtbron is, hoer verder de lichtstralen
-    kunnen komen.
-  - Doordat er licht schijnt op het voorwerp en dit voorwerp vervolgens oplicht.
-  - Ja, zonder een lichtbron kunnen geen lichtstralen terugkaatsen in je ogen waardoor
-    je geen beeld ziet.
+  - Waar
+  - Waar
+  - Waar
   answerB:
-  - Nee, licht is oneindig wat betekent dat het niet uitmaakt hoe fel of sterk een
-    lichtbron is.
-  - De lichtstralen vallen op het voorwerp en worden vervolgens teruggekaatst in
-    je ogen.
-  - Nee, wanneer je meer staafjes in je ogen hebt kun je zien in het donker.
+  - Niet waar
+  - Niet waar
+  - Niet waar
   validityA: 010001
   validityB: 000100
   QuestionText: {fileID: 1091868474}

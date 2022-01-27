@@ -60,6 +60,7 @@ public class CollideTrigger : MonoBehaviour
         }
     }
 
+    // When the player moves away from the collision, stop the dialogue aswell
     private void OnTriggerExit2D(Collider2D collider){
         if(dialogue != null){
             StartCoroutine(dialogue.StopDialogue());
